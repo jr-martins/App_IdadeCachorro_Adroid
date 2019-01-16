@@ -18,12 +18,12 @@
         android:background="@drawable/cachorro" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="271dp"
+        android:id="@+id/caixaTextoId"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="228dp"
+        android:layout_alignStart="@+id/resultadoIdadeId"
+        android:layout_marginTop="226dp"
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="number" />
@@ -41,12 +41,21 @@
         android:textColor="@android:color/background_light" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botaoIdadeId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/caixaTextoId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp"
+        android:text="@string/descobrir_idade" />
+
+    <TextView
+        android:id="@+id/resultadoIdadeId"
+        android:layout_width="303dp"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="180dp"
-        android:text="@string/descobrir_idade" />
+        android:layout_marginBottom="201dp"
+        android:textColor="@android:color/background_light" />
 
 </RelativeLayout>
